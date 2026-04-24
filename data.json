@@ -1,0 +1,126 @@
+{
+    "amphibians": [
+        {
+            "order": "Безхвостые",
+            "species": [
+                {
+                }
+            ]
+        },
+        {
+            "order": "Хвостатые",
+            "species": [
+                {
+                    "common_name": "Сибирский углозуб",
+                    "latin_name": "Hynobius keyserlingi",
+                    "characteristics":{
+                        "color_zones" : [
+                            {
+                                "body_part": "Голова",
+                                "pattern": "",
+                                "pattern_color": ""
+                            },
+                            {
+                                "body_part": "Лапы",
+                                "pattern": "",
+                                "pattern_color": ""
+                            },
+                            {
+                                "body_part": "Спина",
+                                "pattern": "",
+                                "pattern_color": ""
+                            },
+                            {
+                                "body_part": "Бока",
+                                "pattern": "",
+                                "pattern_color": ""
+                            },
+                            {
+                                "body_part": "Брюхо",
+                                "pattern": "",
+                                "pattern_color": ""
+                            },
+                            {
+                                "body_part": "Хвост",
+                                "pattern": "",
+                                "pattern_color": ""
+                            }
+                        ],
+                        "head_type": "",
+                        "ridge": "",
+                        "tail_type": "",
+                        "tail_size": "",
+                        "gills": "",
+                        "teeth": "",
+                        "claws": "",
+                        "front_fingers": "",
+                        "back_fingers": "",
+                        "size_cm": "",
+                        "habitat": "",
+                        "grooves": "",
+                        "skin_type": "",
+                        "fringe": ""
+                    }
+                },
+                {
+                    "common_name": "",
+                    "latin_name": "",
+                    "characteristics":{
+                        "color_zones" : [
+                            {
+                                "body_part": "Голова",
+                                "pattern": "",
+                                "pattern_color": ""
+                            },
+                            {
+                                "body_part": "Лапы",
+                                "pattern": "",
+                                "pattern_color": ""
+                            },
+                            {
+                                "body_part": "Спина",
+                                "pattern": "",
+                                "pattern_color": ""
+                            },
+                            {
+                                "body_part": "Бока",
+                                "pattern": "",
+                                "pattern_color": ""
+                            },
+                            {
+                                "body_part": "Брюхо",
+                                "pattern": "",
+                                "pattern_color": ""
+                            },
+                            {
+                                "body_part": "Хвост",
+                                "pattern": "",
+                                "pattern_color": ""
+                            }
+                        ],
+                        "head_type": "",
+                        "ridge": "",
+                        "tail_type": "",
+                        "tail_size": "",
+                        "gills": "",
+                        "teeth": "",
+                        "claws": "",
+                        "front_fingers": "",
+                        "back_fingers": "",
+                        "size_cm": "",
+                        "habitat": "",
+                        "grooves": "",
+                        "skin_type": "",
+                        "fringe": ""
+                    }
+                }
+            ]
+        },
+        {
+            "order": "Безногие",
+            "species": [
+
+            ]
+        }
+    ]
+}
