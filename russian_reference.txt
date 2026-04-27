@@ -1,0 +1,51 @@
+# Соответствие английских и русских характеристик для описания амфибий
+
+# Поля в characteristics.body_parts
+part = часть тела
+pattern = узор
+pattern_size = размер узора
+color = цвет
+ridge = гребень
+fringe = бахрома
+size = размер
+
+# Общие характеристики в characteristics
+has_gills = наличие жабр
+tooth_type = тип зубов
+has_claws = наличие когтей
+front_toe_count = количество передних пальцев
+hind_toe_count = количество задних пальцев
+size_cm = размер в см
+has_grooves = наличие бороздков
+has_tympanum = наличие барабанной перепонки
+toe_tips_type = тип кончиков пальцев
+has_tubercles = наличие бугорков/мозолей
+tarsal_fold = наличие тарзальной складки
+dark_inguinal_loop = тёмная паховая петля
+dark_spot_under_eye = тёмное пятно под глазом
+longitudinal_ridges = продольные ребрышки между спинно‑боковыми складками
+inner_metatarsal_tubercle_to_toe_ratio = отношение длины внутреннего плюсневого бугра к длине первого пальца задней ноги
+inner_metatarsal_tubercle_to_shin_ratio = отношение длины внутреннего плюсневого бугра к длине голени
+
+# Характеристики в sexual_dimorphism.male
+has_resonators = наличие резонаторов у самца
+resonator_color = цвет резонаторов
+heel_tubercle_type = тип пяточного бугра
+heel_tubercle_ratio = соотношение пяточного бугра
+webbing_type = тип перепонки
+forehead_type = тип лба (наличие выпуклости или плоский)
+joint_tubercle_type = тип сочленового бугорка (двойной или одинарный)
+temporal_stripe = наличие височного пятна, отходящего от глаза
+cloaca_eye_distance_ratio = отношение расстояния клоака‑глаз
+
+# Общие поля верхнего уровня
+common_name = русское название
+latin_name = латинское название
+
+# Блоки данных
+characteristics = общие характеристики
+sexual_dimorphism = половой диморфизм
+male = самец
+female = самка
+unknown = неизвестно
+unique_features = уникальные особенности

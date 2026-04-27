@@ -1,0 +1,101 @@
+{
+    "common_name": "",
+    "latin_name": "",
+    "characteristics": {
+        "body_parts": [
+            {
+                "part": "Голова",
+                "pattern": "",
+                "pattern_size": "",
+                "color": "",
+                "ridge": "",
+                "fringe": "",
+                "size": ""
+            },
+            {
+                "part": "Спина",
+                "pattern": "",
+                "pattern_size": "",
+                "color": "",
+                "ridge": "",
+                "fringe": "",
+                "part_size": ""
+            },
+            {
+                "part": "Брюхо",
+                "pattern": "",
+                "pattern_size": "",
+                "color": "",
+                "ridge": "",
+                "fringe": ""
+            },
+            {
+                "part": "Лапы",
+                "pattern": "",
+                "pattern_size": "",
+                "color": "",
+                "ridge": "",
+                "fringe": "",
+                "part_size": ""
+            },
+            {
+                "part": "Пальцы",
+                "pattern": "",
+                "pattern_size": "",
+                "color": "",
+                "ridge": "",
+                "fringe": "",
+                "part_size": ""
+            },
+            {
+                "part": "Хвост",
+                "pattern": "",
+                "pattern_size": "",
+                "color": "",
+                "ridge": "",
+                "fringe": "",
+                "part_size": ""
+            }
+        ],
+        "has_gills": "",
+        "teeth_type": "",
+        "has_claws": "",
+        "front_toe_count": "",
+        "back_toe_count": "",
+        "toe_tips_type": "",
+        "size_cm": "",
+        "has_grooves": "",
+        "has_tympanum": "",
+        "has_tubercles": "",
+        "tarsal_fold": "",
+        "dark_inguinal_loop": "",
+        "dark_spot_under_eye": "",
+        "longitudinal_ridges": "",
+        "inner_metatarsal_tubercle_to_toe_ratio": "",
+        "inner_metatarsal_tubercle_to_shin_ratio": ""
+    },
+    "sexual_dimorphism": {
+        "male": {
+            "has_resonators": "",
+            "resonator_color": "",
+            "heel_tubercle_type": "",
+            "heel_tubercle_ratio": "",
+            "webbing_type": "",
+            "forehead_type": "",
+            "joint_tubercle_type": "",
+            "temporal_stripe": "",
+            "cloaca_eye_distance_ratio": ""
+        },
+        "female": {
+            "heel_tubercle_type": "",
+            "heel_tubercle_ratio": "",
+            "webbing_type": "",
+            "forehead_type": "",
+            "joint_tubercle_type": "",
+            "temporal_stripe": "",
+            "cloaca_eye_distance_ratio": ""
+        },
+        "unknown": {}
+    },
+    "unique_features": {}
+}
