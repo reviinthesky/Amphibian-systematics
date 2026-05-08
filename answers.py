@@ -22,8 +22,8 @@ class DynamicEnumLoader:
                     for value in values:
                         members[value.upper()] = value
                 elif values[0] == 0:
-                    members['HAS'] = 1
-                    members['HASN\'T'] = 0
+                    members['HAS'] = True
+                    members['HASN\'T'] = False
                 else:
                     for value in values:
                         members[f'VALUE_{value}'] = value
@@ -50,4 +50,4 @@ if __name__ == "__main__":
     print(enums)
     print(loader.get_enum('colorEnum').__members__)
     for k, enum in enums.items():
-        print(f'{k} : {enum.__members__}')
+        print(f'{k} : {enum.__members__}', end='\n_______\n')
