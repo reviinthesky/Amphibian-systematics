@@ -5,97 +5,98 @@
         "body_parts": [
             {
                 "part": "Голова",
-                "pattern": "",
-                "pattern_size": "",
-                "color": "",
+                "pattern": [""],
+                "pattern_size": [""],
+                "color": [""],
                 "ridge": "",
                 "fringe": "",
-                "size": ""
+                "size": [""]
             },
             {
                 "part": "Спина",
-                "pattern": "",
-                "pattern_size": "",
-                "color": "",
+                "pattern": [""],
+                "pattern_size": [""],
+                "color": [""],
                 "ridge": "",
                 "fringe": "",
-                "part_size": ""
+                "size": [""]
             },
             {
                 "part": "Брюхо",
-                "pattern": "",
-                "pattern_size": "",
-                "color": "",
+                "pattern": [""],
+                "pattern_size": [""],
+                "color": [""],
                 "ridge": "",
-                "fringe": ""
+                "fringe": "",
+                "size": [""]
             },
             {
                 "part": "Лапы",
-                "pattern": "",
-                "pattern_size": "",
-                "color": "",
+                "pattern": [""],
+                "pattern_size": [""],
+                "color": [""],
                 "ridge": "",
                 "fringe": "",
-                "part_size": ""
+                "size": [""]
             },
             {
                 "part": "Пальцы",
-                "pattern": "",
-                "pattern_size": "",
-                "color": "",
+                "pattern": [""],
+                "pattern_size": [""],
+                "color": [""],
                 "ridge": "",
                 "fringe": "",
-                "part_size": ""
+                "size": [""]
             },
             {
                 "part": "Хвост",
-                "pattern": "",
-                "pattern_size": "",
-                "color": "",
+                "pattern": [""],
+                "pattern_size": [""],
+                "color": [""],
                 "ridge": "",
                 "fringe": "",
-                "part_size": ""
+                "size": [""]
             }
         ],
-        "has_gills": "",
+        "has_gills": 0,
         "teeth_type": "",
-        "has_claws": "",
-        "front_toe_count": "",
-        "back_toe_count": "",
+        "has_claws": 0,
+        "front_toe_count": 0,
+        "back_toe_count": 0,
         "toe_tips_type": "",
-        "size_cm": "",
-        "has_grooves": "",
-        "has_tympanum": "",
-        "has_tubercles": "",
+        "size_cm": [0, 0],
+        "has_grooves": 0,
+        "has_tympanum": 0,
+        "has_tubercles": 0,
         "tarsal_fold": "",
-        "dark_inguinal_loop": "",
-        "dark_spot_under_eye": "",
-        "longitudinal_ridges": "",
+        "has_dark_inguinal_loop": 0,
+        "has_dark_spot_under_eye": 0,
+        "has_longitudinal_ridges": 0,
         "inner_metatarsal_tubercle_to_toe_ratio": "",
         "inner_metatarsal_tubercle_to_shin_ratio": ""
     },
     "sexual_dimorphism": {
         "male": {
-            "has_resonators": "",
-            "resonator_color": "",
-            "heel_tubercle_type": "",
-            "heel_tubercle_ratio": "",
-            "webbing_type": "",
-            "forehead_type": "",
-            "joint_tubercle_type": "",
-            "temporal_stripe": "",
-            "cloaca_eye_distance_ratio": ""
+            "has_resonators": null,
+            "resonator_color": null,
+            "heel_tubercle_type": null,
+            "heel_tubercle_ratio": null,
+            "webbing_type": null,
+            "forehead_type": null,
+            "joint_tubercle_type": null,
+            "temporal_stripe": null,
+            "cloaca_eye_distance_ratio": null
         },
         "female": {
-            "heel_tubercle_type": "",
-            "heel_tubercle_ratio": "",
-            "webbing_type": "",
-            "forehead_type": "",
-            "joint_tubercle_type": "",
-            "temporal_stripe": "",
-            "cloaca_eye_distance_ratio": ""
+            "heel_tubercle_type": null,
+            "heel_tubercle_ratio": null,
+            "webbing_type": null,
+            "forehead_type": null,
+            "joint_tubercle_type": null,
+            "temporal_stripe": null,
+            "cloaca_eye_distance_ratio": null
         },
         "unknown": {}
     },
-    "unique_features": {}
+    "unique_features": [""]
 }

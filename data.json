@@ -1,468 +1,117 @@
 {
-    "amphibians": [
+    "Tailed": [
+        {},
+        {},
+        {}
+    ],
+    "Tailles" : [
         {
-            "order": "Безхвостые",
-            "species": [
+        "common_name": "Сибирская лягушка",
+        "latin_name": "Rana amurensis",
+        "characteristics": {
+            "body_parts": [
                 {
-                "common_name": "Сибирская лягушка",
-                "latin_name": "Rana amurensis",
-                "characteristics": {
-                    "body_parts": [
-                    {
-                        "part": "Голова",
-                        "pattern": "spots",
-                        "pattern_size": "мелкие",
-                        "color": "серо-коричневый",
-                        "ridge": "отсутствует",
-                        "fringe": "отсутствует",
-                        "size": "пропорциональная, округлая"
-                    },
-                    {
-                        "part": "Спина",
-                        "pattern": ["spots", "stripes"],
-                        "pattern_size": "средние",
-                        "color": "серо‑коричневый",
-                        "ridge": "отсутствует",
-                        "fringe": "отсутствует",
-                        "part_size": ["широкие"]
-                    },
-                    {
-                        "part": "Брюхо",
-                        "pattern": "mosaic",
-                        "pattern_size": "крупный",
-                        "color": ["белый", "розовый"],
-                        "ridge": "отсутствует",
-                        "fringe": "отсутствует"
-                    },
-                    {
-                        "part": "Лапы",
-                        "pattern": "stripes",
-                        "pattern_size": "средние",
-                        "color": "светло‑коричневый",
-                        "ridge": "отсутствует",
-                        "fringe": "отсутствует",
-                        "part_size": ["широкие"]
-                    },
-                    {
-                        "part": "Пальцы",
-                        "pattern": "отсутствует",
-                        "pattern_size": null,
-                        "color": "светло‑коричневый",
-                        "ridge": "отсутствует",
-                        "fringe": "отсутствует",
-                        "part_size": "короткие"
-                    },
-                    {
-                        "part": "Хвост",
-                        "pattern": null,
-                        "pattern_size": null,
-                        "color": null,
-                        "ridge": null,
-                        "fringe": null,
-                        "part_size": null
-                    }
-                    ],
-                    "has_gills": 0,
-                    "teeth_type": ["мелкие", "на верхней челюсти"],
-                    "has_claws": 0,
-                    "front_toe_count": 4,
-                    "back_toe_count": 5,
-                    "toe_tips_type": "округлые",
-                    "size_cm": [5, 8],
-                    "has_grooves": 0,
-                    "has_tympanum": 1,
-                    "has_tubercles": 0,
-                    "tarsal_fold": "отсутствует",
-                    "dark_inguinal_loop": 0,
-                    "dark_spot_under_eye": 1,
-                    "longitudinal_ridges": 0,
-                    "inner_metatarsal_tubercle_to_toe_ratio": null,
-                    "inner_metatarsal_tubercle_to_shin_ratio": null
-                },
-                "sexual_dimorphism": {
-                    "male": {
-                    "has_resonators": 1,
-                    "resonator_color": "серый",
-                    "heel_tubercle_type": null,
-                    "heel_tubercle_ratio": null,
-                    "webbing_type": "развитая перепонка между пальцами задних лап",
-                    "forehead_type": "плоский",
-                    "joint_tubercle_type": null,
-                    "temporal_stripe": 1,
-                    "cloaca_eye_distance_ratio": null,
-                    "size_cm": [5, 7],
-                    "throat_color": "беловатый"
-                    },
-                    "female": {
-                    "heel_tubercle_type": null,
-                    "heel_tubercle_ratio": null,
-                    "webbing_type": "умеренно развитая перепонка",
-                    "forehead_type": "плоский",
-                    "joint_tubercle_type": null,
-                    "temporal_stripe": 1,
-                    "cloaca_eye_distance_ratio": null,
-                    "size_cm": [6, 8],
-                    "body_shape": "более массивное тело",
-                    "abdomen_size": "увеличенное (при икре)"
-                    },
-                    "unknown": {}
-                },
-                "unique_features": [
-                    "зимует в водоёмах",
-                    "выдерживает промерзание грунта",
-                    "ареал: Сибирь, Дальний Восток, Монголия, северо‑восток Китая",
-                    "среда обитания: болота, влажные луга, леса вблизи водоёмов",
-                    "активность: дневная и сумеречная",
-                    "икра откладывается большими комками",
-                    "в брачный период y самцов появляются серые резонаторы"
-                ]
+                    "part": "Голова",
+                    "pattern": ["spots"],
+                    "pattern_size": ["мелкие"],
+                    "color": ["коричневый", "оливковый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует",
+                    "size": ["небольшая"]
                 },
                 {
-                    "common_name": "Остромордая лягушка",
-                    "latin_name": "Rana arvalis",
-                    "characteristics": {
-                        "body_parts": [
-                            {
-                                "part": "Голова",
-                                "pattern": "морда заострённая",
-                                "pattern_size": null,
-                                "color": "от светло‑коричневого до тёмно‑бурого, часто с тёмной полосой вдоль головы",
-                                "ridge": null,
-                                "fringe": null,
-                                "size": null
-                            },
-                            {
-                                "part": "Спина",
-                                "pattern": "тёмные пятна и полосы, иногда продольная светлая полоса",
-                                "pattern_size": "средние и крупные пятна",
-                                "color": "коричневый, бурый, серый",
-                                "ridge": null,
-                                "fringe": null,
-                                "part_size": null
-                            },
-                            {
-                                "part": "Брюхо",
-                                "pattern": "без выраженного рисунка",
-                                "pattern_size": null,
-                                "color": "беловатое или желтоватое, иногда с мраморным узором",
-                                "ridge": null,
-                                "fringe": null
-                            },
-                            {
-                                "part": "Лапы",
-                                "pattern": "тёмные поперечные полосы",
-                                "pattern_size": "узкие полосы",
-                                "color": "соответствует окраске спины, но светлее",
-                                "ridge": null,
-                                "fringe": null,
-                                "part_size": null
-                            },
-                            {
-                                "part": "Пальцы",
-                                "pattern": null,
-                                "pattern_size": null,
-                                "color": "светлее, чем лапы",
-                                "ridge": null,
-                                "fringe": "нет перепонок между пальцами передних лап",
-                                "part_size": null
-                            },
-                            {
-                                "part": "Хвост",
-                                "pattern": null,
-                                "pattern_size": null,
-                                "color": null,
-                                "ridge": null,
-                                "fringe": null,
-                                "part_size": null
-                            }
-                        ],
-                        "has_gills": 0,
-                        "teeth_type": "мелкие зубы на верхней челюсти",
-                        "has_claws": 0,
-                        "front_toe_count": 4,
-                        "back_toe_count": 5,
-                        "toe_tips_type": "не расширены, без присосок",
-                        "size_cm": [5, 8],
-                        "has_grooves": 0,
-                        "has_tympanum": 1,
-                        "has_tubercles": 1,
-                        "tarsal_fold": null,
-                        "dark_inguinal_loop": 0,
-                        "dark_spot_under_eye": 1,
-                        "longitudinal_ridges": 0,
-                        "inner_metatarsal_tubercle_to_toe_ratio": null,
-                        "inner_metatarsal_tubercle_to_shin_ratio": null
-                    },
-                    "sexual_dimorphism": {
-                        "male": {
-                            "has_resonators": 1,
-                            "resonator_color": "сероватый или голубоватый",
-                            "heel_tubercle_type": null,
-                            "heel_tubercle_ratio": null,
-                            "webbing_type": "умеренно развитая перепонка на задних лапах",
-                            "forehead_type": null,
-                            "joint_tubercle_type": null,
-                            "temporal_stripe": null,
-                            "cloaca_eye_distance_ratio": null
-                        },
-                        "female": {
-                            "heel_tubercle_type": null,
-                            "heel_tubercle_ratio": null,
-                            "webbing_type": "умеренно развитая перепонка на задних лапах",
-                            "forehead_type": null,
-                            "joint_tubercle_type": null,
-                            "temporal_stripe": null,
-                            "cloaca_eye_distance_ratio": null
-                        },
-                        "unknown": {}
-                    },
-                    "unique_features": {
-                        "features": [
-                            "заострённая морда",
-                            "тёмное пятно под глазом",
-                            "сезонное изменение окраски у самцов в брачный период (голубоватый оттенок)",
-                            "способность переносить низкие температуры"
-                        ]
-                    }
+                    "part": "Спина",
+                    "pattern": ["spots", "stripes"],
+                    "pattern_size": ["средние", "узкие"],
+                    "color": ["бурый", "оливковый", "серый"],
+                    "ridge": "слабовыраженный",
+                    "fringe": "отсутствует",
+                    "size": ["средняя"]
+                },
+                {
+                    "part": "Брюхо",
+                    "pattern": ["solid"],
+                    "pattern_size": null,
+                    "color": ["белый", "светлый", "розовый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует",
+                    "size": ["широкое"]
+                },
+                {
+                    "part": "Лапы",
+                    "pattern": ["spots"],
+                    "pattern_size": ["мелкие"],
+                    "color": ["серый", "коричневый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует",
+                    "size": ["средние"]
+                },
+                {
+                    "part": "Пальцы",
+                    "pattern": null,
+                    "pattern_size": null,
+                    "color": ["светлый", "серый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует",
+                    "size": ["короткие"]
+                },
+                {
+                    "part": "Хвост",
+                    "pattern": null,
+                    "pattern_size": null,
+                    "color": null,
+                    "ridge": null,
+                    "fringe": null,
+                    "size": null
                 }
-            ]
+            ],
+            "has_gills": 0,
+            "teeth_type": "мелкие",
+            "has_claws": 0,
+            "front_toe_count": 4,
+            "back_toe_count": 5,
+            "toe_tips_type": "округлые",
+            "size_cm": [5, 8],
+            "has_grooves": 0,
+            "has_tympanum": 1,
+            "has_tubercles": 1,
+            "tarsal_fold": "слабовыраженная",
+            "has_dark_inguinal_loop": 0,
+            "has_dark_spot_under_eye": 0,
+            "has_longitudinal_ridges": 0,
+            "inner_metatarsal_tubercle_to_toe_ratio": "небольшая относительно длины пальца",
+            "inner_metatarsal_tubercle_to_shin_ratio": "малая относительно длины голени"
         },
-        {
-            "order": "Хвостатые",
-            "species": [
-                {
-                "common_name": "Сибирский углозуб",
-                "latin_name": "Salamandrella keyserlingii",
-                "characteristics": {
-                    "body_parts": [
-                    {
-                        "part": "Голова",
-                        "pattern": "нечёткие тёмные пятна",
-                        "pattern_size": "мелкие",
-                        "color": "коричневато‑серый",
-                        "ridge": "отсутствует",
-                        "fringe": "отсутствует",
-                        "size": "уплощённая, треугольная при виде сверху"
-                    },
-                    {
-                        "part": "Спина",
-                        "pattern": "продольная светлая полоса вдоль хребта",
-                        "pattern_size": "широкая",
-                        "color": "коричневый",
-                        "ridge": "слабовыраженный спинной гребень",
-                        "fringe": "отсутствует",
-                        "part_size": "равна длине тела"
-                    },
-                    {
-                        "part": "Брюхо",
-                        "pattern": "редкие тёмные крапинки",
-                        "pattern_size": "мелкие",
-                        "color": "желтовато‑серый",
-                        "ridge": "отсутствует",
-                        "fringe": "отсутствует"
-                    },
-                    {
-                        "part": "Лапы",
-                        "pattern": "однородный",
-                        "pattern_size": null,
-                        "color": "светло‑коричневый",
-                        "ridge": "отсутствует",
-                        "fringe": "отсутствует",
-                        "part_size": "пропорциональные"
-                    },
-                    {
-                        "part": "Пальцы",
-                        "pattern": "отсутствует",
-                        "pattern_size": null,
-                        "color": "светло‑коричневый",
-                        "ridge": "отсутствует",
-                        "fringe": "отсутствует",
-                        "part_size": "короткие"
-                    },
-                    {
-                        "part": "Хвост",
-                        "pattern": "поперечные тёмные полосы",
-                        "pattern_size": "средние",
-                        "color": "коричневый",
-                        "ridge": "отсутствует",
-                        "fringe": "отсутствует",
-                        "part_size": "примерно равен длине тела"
-                    }
-                    ],
-                    "has_gills": 0,
-                    "teeth_type": ["мелкие", "двурядные на верхней челюсти"],
-                    "has_claws": 0,
-                    "front_toe_count": 4,
-                    "back_toe_count": 5,
-                    "toe_tips_type": "округлые",
-                    "size_cm": [12, 16],
-                    "has_grooves": 1,
-                    "has_tympanum": 0,
-                    "has_tubercles": 0,
-                    "tarsal_fold": "отсутствует",
-                    "dark_inguinal_loop": 0,
-                    "dark_spot_under_eye": 0,
-                    "longitudinal_ridges": 0,
-                    "inner_metatarsal_tubercle_to_toe_ratio": null,
-                    "inner_metatarsal_tubercle_to_shin_ratio": null
-                },
-                "sexual_dimorphism": {
-                    "male": {
-                    "has_resonators": 0,
-                    "resonator_color": null,
-                    "heel_tubercle_type": null,
-                    "heel_tubercle_ratio": null,
-                    "webbing_type": "отсутствует",
-                    "forehead_type": "уплощённая",
-                    "joint_tubercle_type": null,
-                    "temporal_stripe": 0,
-                    "cloaca_eye_distance_ratio": null,
-                    "size_cm": [12, 14],
-                    "color": "более яркий контраст полос на спине в брачный период",
-                    "special_features": "брачные мозоли на 1-2 пальцах передних лап (в сезон размножения)"
-                    },
-                    "female": {
-                    "heel_tubercle_type": null,
-                    "heel_tubercle_ratio": null,
-                    "webbing_type": "отсутствует",
-                    "forehead_type": "уплощённая",
-                    "joint_tubercle_type": null,
-                    "temporal_stripe": 0,
-                    "cloaca_eye_distance_ratio": null,
-                    "size_cm": [14, 16],
-                    "body_shape": "округлое брюхо, широкие бока (связано c вынашиванием икры)",
-                    "color": "менее контрастная окраска полос на спине"
-                    },
-                    "unknown": {}
-                },
-                "unique_features": [
-                    "впадает в анабиоз при отрицательных температурах",
-                    "переносит замораживание",
-                    "икру откладывает в водоёмах, парные икряные мешки",
-                    "ночная и сумеречная активность",
-                    "ареал: Сибирь, Дальний Восток, Камчатка, Якутия, Монголия, Корея, Япония (Хоккайдо)",
-                    "среда обитания: тайга, тундра, болота, влажные леса; вблизи водоёмов, под лесной подстилкой, во мху"
-                ]
-                },
-                {
-                "common_name": "Обыкновенный тритон",
-                "latin_name": "Triturus vulgaris",
-                "characteristics": {
-                    "body_parts": [
-                        {
-                            "part": "Голова",
-                            "pattern": "без выраженного рисунка, иногда мелкие тёмные точки",
-                            "pattern_size": "мелкий",
-                            "color": ["коричневый", "оливковый", "тёмно‑серый"],
-                            "ridge": "не выражена",
-                            "fringe": null,
-                            "size": null
-                        },
-                        {
-                            "part": "Спина",
-                            "pattern": "равномерно окрашенная или с тёмной продольной полосой вдоль хребта",
-                            "pattern_size": "широкая полоса",
-                            "color": ["коричневый", "оливковый", "бурый", "с металлическим отливом"],
-                            "ridge": "в брачный период у самцов развивается зубчатый гребень",
-                            "fringe": null,
-                            "part_size": null
-                        },
-                        {
-                            "part": "Брюхо",
-                            "pattern": "иногда мелкие тёмные пятна",
-                            "pattern_size": "мелкие",
-                            "color": ["жёлтое", "оранжевое", "розовое"],
-                            "ridge": null,
-                            "fringe": null
-                        },
-                        {
-                            "part": "Лапы",
-                            "pattern": "однотонная окраска, без рисунка",
-                            "pattern_size": null,
-                            "color": ["соответствует окраске спины, но светлее"],
-                            "ridge": null,
-                            "fringe": "нет перепонок",
-                            "part_size": null
-                        },
-                        {
-                            "part": "Пальцы",
-                            "pattern": null,
-                            "pattern_size": null,
-                            "color": ["светло‑коричневый", "серый"],
-                            "ridge": null,
-                            "fringe": null,
-                            "part_size": null
-                        },
-                        {
-                            "part": "Хвост",
-                            "pattern": "полосатый (тёмные и светлые полосы по бокам)",
-                            "pattern_size": "средние полосы",
-                            "color": ["сверху — как спина", "снизу — светлее, с серебристым отливом"],
-                            "ridge": null,
-                            "fringe": "по бокам — кожистая оторочка",
-                            "part_size": "примерно равен длине тела"
-                        }
-                    ],
-                    "has_gills": 1,
-                    "teeth_type": "мелкие, расположены дугообразно на небе",
-                    "has_claws": 0,
-                    "front_toe_count": 4,
-                    "back_toe_count": 5,
-                    "toe_tips_type": "закруглённые, без присосок",
-                    "size_cm": [8, 11],
-                    "has_grooves": 0,
-                    "has_tympanum": 0,
-                    "has_tubercles": 0,
-                    "tarsal_fold": null,
-                    "dark_inguinal_loop": 0,
-                    "dark_spot_under_eye": 0,
-                    "longitudinal_ridges": 0,
-                    "inner_metatarsal_tubercle_to_toe_ratio": null,
-                    "inner_metatarsal_tubercle_to_shin_ratio": null
-                },
-                "sexual_dimorphism": {
-                    "male": {
-                        "has_resonators": 0,
-                        "resonator_color": null,
-                        "heel_tubercle_type": null,
-                        "heel_tubercle_ratio": null,
-                        "webbing_type": null,
-                        "forehead_type": null,
-                        "joint_tubercle_type": null,
-                        "temporal_stripe": null,
-                        "cloaca_eye_distance_ratio": null
-                    },
-                    "female": {
-                        "heel_tubercle_type": null,
-                        "heel_tubercle_ratio": null,
-                        "webbing_type": null,
-                        "forehead_type": null,
-                        "joint_tubercle_type": null,
-                        "temporal_stripe": null,
-                        "cloaca_eye_distance_ratio": null
-                    },
-                    "unknown": {
-                        "male_specific": [
-                            "в брачный период развивается высокий зубчатый гребень вдоль спины и хвоста",
-                            "более яркая окраска"
-                        ],
-                        "female_specific": [
-                            "гребня нет",
-                            "окраска менее яркая"
-                        ]
-                    }
-                },
-                "unique_features": {
-                    "features": [
-                        "наличие наружных жабр у личинок и иногда у взрослых особей в холодных водоёмах",
-                        "кожистая оторочка по бокам хвоста",
-                        "способность к регенерации конечностей и хвоста",
-                        "зубчатый гребень у самцов в брачный период",
-                        "контрастное брюхо (жёлтое/оранжевое) на фоне тёмной спины"
-                    ]
-                }
-                }
-            ]
-        }
+        "sexual_dimorphism": {
+            "male": {
+            "has_resonators": null,
+            "resonator_color": null,
+            "heel_tubercle_type": null,
+            "heel_tubercle_ratio": null,
+            "webbing_type": null,
+            "forehead_type": null,
+            "joint_tubercle_type": null,
+            "temporal_stripe": null,
+            "cloaca_eye_distance_ratio": null
+            },
+            "female": {
+            "heel_tubercle_type": null,
+            "heel_tubercle_ratio": null,
+            "webbing_type": null,
+            "forehead_type": null,
+            "joint_tubercle_type": null,
+            "temporal_stripe": null,
+            "cloaca_eye_distance_ratio": null
+            },
+            "unknown": {}
+        },
+        "unique_features": [
+            "розовая или красноватая окраска брюха с тёмными пятнами или мраморным рисунком",
+            "наличие тёмной полосы вдоль головы и спины",
+            "сравнительно короткие задние конечности относительно других видов лягушек"
+        ]
+        },
+        {},
+        {}
     ]
 }

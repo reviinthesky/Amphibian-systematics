@@ -75,19 +75,21 @@ DEFAULT_ANSWERS: Dict[str, Any] = {
 
 
 class Identifier:
+    """Main class of the app."""
+
     def __init__(self):
-        self.load_data()
+        self._load_data()
 
-    def load_data(self):
-        with open('data.json') as file:
+    def _load_data(self):
+        with open('data.json', 'r', encoding='UTF-8') as file:
             data = json.load(file)
-            self.tailed = data['amphibians']['Хвостатые']
-            self.tailles = data['amphibians']['Безхвостые']
+            self.tailed = data['Tailed']
+            self.tailles = data['Tailles']
 
-    def calculate_similiarity():
-        pass
-
-    def compare_body_parts(self, input_parts, species_parts) -> float:
+    def _compare_body_parts(
+            self,
+            input_parts: List[Dict[str, Any]],
+            species_parts: List[Dict[str, Any]]) -> float:
         score = 0.0
         total_checks = 0
         for input_part in input_parts:
@@ -100,30 +102,38 @@ class Identifier:
                         part_score += self._compare_patterns(
                             input_part['pattern'], species_part['pattern'])
                         checks += 1
-                    if input_part['pattern_size'] and species_part['pattern_size']:
+                    if (input_part['pattern_size']
+                            and species_part['pattern_size']):
                         part_score += self._compare_pattern_size(
-                            input_part['pattern_size'], species_part['pattern_size'])
+                            input_part['pattern_size'],
+                            species_part['pattern_size']
+                        )
                         checks += 1
                     if input_part['color'] and species_part['color']:
                         part_score += self._compare_colors(
                             input_part['color'], species_part['color'])
                         checks += 1
                     if input_part['ridge'] and species_part['ridge']:
-                        part_score += 1.0 if input_part['ridge'] == species_part['ridge'] else 0.0
+                        part_score += 1.0 if input_part['ridge'] \
+                            == species_part['ridge'] else 0.0
                         checks += 1
                     if input_part['fringe'] and species_part['fringe']:
-                        part_score += 1.0 if input_part['fringe'] == species_part['fringe'] else 0.0
+                        part_score += 1.0 if input_part['fringe'] \
+                            == species_part['fringe'] else 0.0
                         checks += 1
                     if input_part['size'] and species_part['size']:
-                        part_score += self._compare_size(
-                            input_part['size'], species_part['size'])
+                        part_score += 1.0 if input_part['size'] \
+                            == species_part['size'] else 0.0
                         checks += 1
             if checks > 0:
                 score += part_score / checks
                 total_checks += 1
         return score / total_checks if total_checks > 0 else 0.0
 
-    def _compare_colors(self, input_color: list[str], other_color: list[str]) -> float:
+    def _compare_colors(
+            self,
+            input_color: list[str],
+            other_color: list[str]) -> float:
         user_colors = set(input_color)
         other_colors = set(other_color)
 
@@ -131,7 +141,10 @@ class Identifier:
         max_possible = min(len(user_colors), len(other_colors))
         return intersection_length / max_possible
 
-    def _compare_patterns(self, user_pattern: list[str], other_pattern: list[str]) -> float:
+    def _compare_patterns(
+            self,
+            user_pattern: list[str],
+            other_pattern: list[str]) -> float:
         user_patterns = set(user_pattern)
         other_patterns = set(other_pattern)
 
@@ -143,7 +156,11 @@ class Identifier:
     def _compare_pattern_size(self, size1: str, size2: str) -> float:
         return 1.0 if size1 == size2 else 0.0
 
-    def _compare_size(self, input_size: tuple[int, int], other_size: tuple[int, int]) -> float:
+    def _compare_size(
+            self,
+            input_size: List[int],
+            other_size: List[int]) -> float:
+        print(input_size)
         input_min, input_max = input_size
         other_min, other_max = other_size
 
@@ -168,7 +185,103 @@ class Identifier:
         return 0.0
 
     def find_matches(self, user_input):
+        """
+        Calls other functions to assign score and find
+        species based on user input.
+        """
         if user_input.get('has_tail', False):
             species_list = self.tailed
         else:
             species_list = self.tailles
+
+        found_species: list[tuple[Dict, float]] = []
+
+        for species in species_list:
+            body_score = self._compare_body_parts(
+                user_input['body_parts'],
+                species['characteristics']['body_parts'])
+            size_score = self._compare_size(
+                user_input['size_cm'],
+                species['characteristics']['size_cm'])
+            total_score = sum([body_score, size_score])
+            if total_score < 0.6:
+                continue
+            found_species.append((species, total_score))
+        if not found_species:
+            return None
+        else:
+            found_species.sort(key=lambda x: x[1], reverse=True)
+            winner = found_species[0][0]
+            return winner
+
+
+def test():
+    identifier = Identifier()
+    user_input = {
+        "body_parts": [
+            {
+                "part": "Голова",
+                "pattern": "spots",
+                "pattern_size": "мелкие",
+                "color": ["серый", "коричневый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует",
+                "size": ["средние"]
+            },
+            {
+                "part": "Спина",
+                "pattern": ["spots", "stripes"],
+                "pattern_size": "средние",
+                "color": ["серый", "коричневый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует",
+                "size": ["широкие"]
+            },
+            {
+                "part": "Брюхо",
+                "pattern": "mosaic",
+                "pattern_size": "крупный",
+                "color": ["белый", "розовый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует",
+                "size": None
+            },
+            {
+                "part": "Лапы",
+                "pattern": "stripes",
+                "pattern_size": "средние",
+                "color": ["светлый", "коричневый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует",
+                "size": ["широкие"]
+            },
+            {
+                "part": "Пальцы",
+                "pattern": "отсутствует",
+                "pattern_size": None,
+                "color": "светло‑коричневый",
+                "ridge": "отсутствует",
+                "fringe": "отсутствует",
+                "size": "короткие"
+            },
+            {
+                "part": "Хвост",
+                "pattern": None,
+                "pattern_size": None,
+                "color": None,
+                "ridge": None,
+                "fringe": None,
+                "size": None
+            }
+        ],
+        'size_cm': [6, 8]
+    }
+    result = identifier.find_matches(user_input)
+    if result is None:
+        print('No matches found :C')
+    else:
+        print(result['common_name'], result['latin_name'])
+
+
+if __name__ == '__main__':
+    test()
