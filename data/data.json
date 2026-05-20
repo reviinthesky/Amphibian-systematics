@@ -1,0 +1,211 @@
+{
+    "Tailed": [
+        {},
+        {},
+        {}
+    ],
+    "Tailles" : [
+        {
+        "common_name": "Сибирская лягушка",
+        "latin_name": "Rana amurensis",
+        "characteristics": {
+            "body_parts": [
+                {
+                    "part": "Голова",
+                    "pattern": ["spots"],
+                    "pattern_size": ["мелкие"],
+                    "color": ["коричневый", "оливковый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Спина",
+                    "pattern": ["spots", "stripes"],
+                    "pattern_size": ["средние", "узкие"],
+                    "color": ["бурый", "оливковый", "серый"],
+                    "ridge": "слабовыраженный",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Брюхо",
+                    "pattern": ["solid"],
+                    "pattern_size": null,
+                    "color": ["белый", "светлый", "розовый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Лапы",
+                    "pattern": ["spots"],
+                    "pattern_size": ["мелкие"],
+                    "color": ["серый", "коричневый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Пальцы",
+                    "pattern": null,
+                    "pattern_size": null,
+                    "color": ["светлый", "серый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Хвост",
+                    "pattern": null,
+                    "pattern_size": null,
+                    "color": null,
+                    "ridge": null,
+                    "fringe": null
+                }
+            ],
+            "size_cm": [5, 8],
+            "key_traits": 
+            {
+                "has_gills": 0,
+                "teeth_type": "мелкие",
+                "has_claws": 0,
+                "front_toe_count": 4,
+                "back_toe_count": 5,
+                "toe_tips_type": "округлые",
+                "has_grooves": 0,
+                "has_tympanum": 1,
+                "has_tubercles": 1,
+                "tarsal_fold": "слабовыраженная",
+                "has_dark_inguinal_loop": 0,
+                "has_dark_spot_under_eye": 0,
+                "has_longitudinal_ridges": 0
+            }
+        },
+        "sexual_dimorphism": {
+            "male": {
+            "has_resonators": null,
+            "resonator_color": null,
+            "heel_tubercle_type": null,
+            "heel_tubercle_ratio": null,
+            "webbing_type": null,
+            "forehead_type": null,
+            "joint_tubercle_type": null,
+            "temporal_stripe": null,
+            "cloaca_eye_distance_ratio": null
+            },
+            "female": {
+            "heel_tubercle_type": null,
+            "heel_tubercle_ratio": null,
+            "webbing_type": null,
+            "forehead_type": null,
+            "joint_tubercle_type": null,
+            "temporal_stripe": null,
+            "cloaca_eye_distance_ratio": null
+            },
+            "unknown": {}
+        },
+        "unique_features": [
+            "розовая или красноватая окраска брюха с тёмными пятнами или мраморным рисунком",
+            "наличие тёмной полосы вдоль головы и спины",
+            "сравнительно короткие задние конечности относительно других видов лягушек"
+        ]
+        },  
+        {
+            "common_name": "Остромордая лягушка",
+            "latin_name": "Rana arvalis",
+            "characteristics": {
+                "body_parts": [
+                {
+                    "part": "Голова",
+                    "pattern": ["spots"],
+                    "pattern_size": ["мелкие"],
+                    "color": ["тёмные"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Спина",
+                    "pattern": ["spots"],
+                    "pattern_size": ["средние"],
+                    "color": ["тёмные"],
+                    "ridge": "слабовыраженный",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Брюхо",
+                    "pattern": ["solid"],
+                    "pattern_size": [],
+                    "color": ["светлый", "белый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Лапы",
+                    "pattern": ["spots"],
+                    "pattern_size": ["мелкие"],
+                    "color": ["бурый", "коричневый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Пальцы",
+                    "pattern": [],
+                    "pattern_size": [],
+                    "color": ["коричневый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Хвост",
+                    "pattern": [],
+                    "pattern_size": [],
+                    "color": [],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                }
+                ],
+                "size_cm": [5, 8],
+                "key_traits":
+                {
+                    "has_gills": 0,
+                    "teeth_type": "мелкие",
+                    "has_claws": 0,
+                    "front_toe_count": 4,
+                    "back_toe_count": 5,
+                    "toe_tips_type": "закруглённые",
+                    "has_grooves": 0,
+                    "has_tympanum": 1,
+                    "has_tubercles": 0,
+                    "tarsal_fold": "отсутствует",
+                    "has_dark_inguinal_loop": 1,
+                    "has_dark_spot_under_eye": 0,
+                    "has_longitudinal_ridges": 0
+                }
+            },
+            "sexual_dimorphism": {
+                "male": {
+                "has_resonators": null,
+                "resonator_color": null,
+                "heel_tubercle_type": null,
+                "heel_tubercle_ratio": null,
+                "webbing_type": null,
+                "forehead_type": null,
+                "joint_tubercle_type": null,
+                "temporal_stripe": null,
+                "cloaca_eye_distance_ratio": null
+                },
+                "female": {
+                "heel_tubercle_type": null,
+                "heel_tubercle_ratio": null,
+                "webbing_type": null,
+                "forehead_type": null,
+                "joint_tubercle_type": null,
+                "temporal_stripe": null,
+                "cloaca_eye_distance_ratio": null
+                },
+                "unknown": {}
+            },
+            "unique_features": [
+                "характерное тёмное пятно в паховой области",
+                "острая мордочка",
+                "в брачный период у самцов появляется голубоватая окраска тела"
+            ]
+        }
+    ]
+}

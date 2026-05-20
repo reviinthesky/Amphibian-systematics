@@ -9,8 +9,7 @@
                 "pattern_size": [""],
                 "color": [""],
                 "ridge": "",
-                "fringe": "",
-                "size": [""]
+                "fringe": ""
             },
             {
                 "part": "Спина",
@@ -18,8 +17,7 @@
                 "pattern_size": [""],
                 "color": [""],
                 "ridge": "",
-                "fringe": "",
-                "size": [""]
+                "fringe": ""
             },
             {
                 "part": "Брюхо",
@@ -27,8 +25,7 @@
                 "pattern_size": [""],
                 "color": [""],
                 "ridge": "",
-                "fringe": "",
-                "size": [""]
+                "fringe": ""
             },
             {
                 "part": "Лапы",
@@ -36,8 +33,7 @@
                 "pattern_size": [""],
                 "color": [""],
                 "ridge": "",
-                "fringe": "",
-                "size": [""]
+                "fringe": ""
             },
             {
                 "part": "Пальцы",
@@ -45,8 +41,7 @@
                 "pattern_size": [""],
                 "color": [""],
                 "ridge": "",
-                "fringe": "",
-                "size": [""]
+                "fringe": ""
             },
             {
                 "part": "Хвост",
@@ -54,26 +49,26 @@
                 "pattern_size": [""],
                 "color": [""],
                 "ridge": "",
-                "fringe": "",
-                "size": [""]
+                "fringe": ""
             }
         ],
-        "has_gills": 0,
-        "teeth_type": "",
-        "has_claws": 0,
-        "front_toe_count": 0,
-        "back_toe_count": 0,
-        "toe_tips_type": "",
         "size_cm": [0, 0],
-        "has_grooves": 0,
-        "has_tympanum": 0,
-        "has_tubercles": 0,
-        "tarsal_fold": "",
-        "has_dark_inguinal_loop": 0,
-        "has_dark_spot_under_eye": 0,
-        "has_longitudinal_ridges": 0,
-        "inner_metatarsal_tubercle_to_toe_ratio": "",
-        "inner_metatarsal_tubercle_to_shin_ratio": ""
+        "key_traits":
+        {
+            "has_gills": 0,
+            "teeth_type": "",
+            "has_claws": 0,
+            "front_toe_count": 0,
+            "back_toe_count": 0,
+            "toe_tips_type": "",
+            "has_grooves": 0,
+            "has_tympanum": 0,
+            "has_tubercles": 0,
+            "tarsal_fold": "",
+            "has_dark_inguinal_loop": 0,
+            "has_dark_spot_under_eye": 0,
+            "has_longitudinal_ridges": 0
+        }
     },
     "sexual_dimorphism": {
         "male": {
