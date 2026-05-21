@@ -272,6 +272,3 @@ def run_ui():
     )
     check_button.pack(pady=10)
     root.mainloop()
-
-
-if __name__ == "__main__":
