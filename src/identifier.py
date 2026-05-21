@@ -1,72 +1,6 @@
 import json
 from typing import Any, Dict, List
 
-
-DEFAULT_ANSWERS: Dict[str, Any] = {
-    "body_parts": [
-        {
-            "part": "Голова",
-            "pattern": None,
-            "pattern_size": None,
-            "color": None,
-            "ridge": None,
-            "fringe": None
-        },
-        {
-            "part": "Спина",
-            "pattern": None,
-            "pattern_size": None,
-            "color": None,
-            "ridge": None,
-            "fringe": None
-        },
-        {
-            "pattern": None,
-            "pattern_size": None,
-            "color": None,
-            "ridge": None,
-            "fringe": None
-        },
-        {
-            "pattern": None,
-            "pattern_size": None,
-            "color": None,
-            "ridge": None,
-            "fringe": None
-        },
-        {
-            "pattern": None,
-            "pattern_size": None,
-            "color": None,
-            "ridge": None,
-            "fringe": None
-        },
-        {
-            "pattern": None,
-            "pattern_size": None,
-            "color": None,
-            "ridge": None,
-            "fringe": None
-        }
-    ],
-    "has_gills": None,
-    "teeth_type": None,
-    "has_claws": None,
-    "front_toe_count": None,
-    "back_toe_count": None,
-    "toe_tips_type": None,
-    "size_cm": None,
-    "has_grooves": None,
-    "has_tympanum": None,
-    "has_tubercles": None,
-    "tarsal_fold": None,
-    "dark_inguinal_loop": None,
-    "dark_spot_under_eye": None,
-    "longitudinal_ridges": None,
-    "inner_metatarsal_tubercle_to_toe_ratio": None,
-    "inner_metatarsal_tubercle_to_shin_ratio": None
-}
-
 KEY_TRAITS_WEIGHT = 30.0
 BODY_PARTS_WEIGHT = 45.0
 SIZE_WEIGHT = 25.0
@@ -141,7 +75,7 @@ class Identifier:
         if total_traits != len(user_input):
             print(total_traits, len(user_input))
             print(species)
-            print('-'*10)
+            print('-' * 10)
             print(user_input)
             raise ValueError(
                 'Bad input, not enough key traits. Check input module')
@@ -149,7 +83,7 @@ class Identifier:
         for trait in user_input:
             if user_input[trait] == species[trait]:
                 matches += 1
-        return (matches/total_traits) * KEY_TRAITS_WEIGHT
+        return (matches / total_traits) * KEY_TRAITS_WEIGHT
 
     def _compare_size(
             self,
@@ -176,7 +110,7 @@ class Identifier:
         if union == 0:
             return SIZE_WEIGHT
 
-        base_overlap_score = overlap/union
+        base_overlap_score = overlap / union
         return base_overlap_score * SIZE_WEIGHT
 
     def find_matches(self, user_input: Dict[str, Any]):

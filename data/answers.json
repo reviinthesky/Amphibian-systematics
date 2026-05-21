@@ -1,21 +1,6 @@
 {
-    "pattern_types": {
-        "spots": {
-            "size": ["мелкие", "средние", "крупные"],
-            "color": ["тёмные", "светлые", "нечёткие"],
-            "distribution": ["редкие", "частые", "группированные"]
-        },
-        "stripes": {
-            "width": ["узкие", "средние", "широкие"],
-            "direction": ["поперечные", "продольные"],
-            "color": ["тёмные", "светлые"]
-        },
-        "mosaic": {
-            "type": ["мраморный", "сетчатый"],
-            "size": ["крупный", "мелкий"]
-        },
-        "solid": "однородный"
-    },
+    "pattern_type": ["mosaic", "solid", "stripes"],
+
     "color": [
         "коричневый",
         "серый",
@@ -26,41 +11,42 @@
         "жёлтый",
         "розовый"
     ],
-    "ridge": [
+    "s_ridge": [
         "отсутствует",
         "слабовыраженный",
         "зубчатый"
     ],
-    "fringe": [
+    "s_fringe": [
         "отсутствует",
         "кожистая оторочка"
     ],
     "size_min": 1,
     "size_max": 20,
     "has_gills": [0, 1],
-    "teeth_type": [
+    "s_teeth_type": [
         "мелкие",
         "двурядные"
     ],
     "has_claws": [0, 1],
-    "front_toe_count": [3, 4, 5],
-    "back_toe_count": [3, 4, 5],
-    "toe_tips_type": [
+    "r_front_toe_count": [3, 4, 5],
+    "r_back_toe_count": [3, 4, 5],
+    "s_toe_tips_type": [
         "округлые",
         "закруглённые"
     ],
     "has_grooves": [0, 1],
     "has_tympanum": [0, 1],
     "has_tubercles": [0, 1],
-    "webbing_type": [
+    "s_webbing_type": [
         "развитая",
         "умеренная",
         "отсутствует"
     ],
-    "forehead_type": [
+    "s_forehead_type": [
         "плоский",
         "уплощённый"
     ],
-    "temporal_stripe": [0, 1],
-    "dark_spot_under_eye": [0, 1]
+    "has_temporal_stripe": [0, 1],
+    "has_dark_spot_under_eye": [0, 1],
+    "has_tail": [0, 1]
 }
