@@ -1,0 +1,22 @@
+{
+    "has_tail": "Есть хвост?",
+    "size_cm": "",
+    "has_gills": "Есть жабры?",
+    "teeth_type": "Какой тип зубов?",
+    "has_claws": "Есть когти?",
+    "front_toe_count": "Количество пальцев на передних лапах",
+    "back_toe_count": "Количество пальцев на задних лапах",
+    "toe_tips_type": "Тип кончиков пальцев",
+    "has_grooves": "Есть бороздки?",
+    "has_tympanum": "Есть барабанная перепонка?",
+    "has_tubercles": "Есть мозоли?",
+    "tarsal_fold": "Тарзальная складка",
+    "has_dark_inguinal_loop": "Есть тёмная паховая петля?",
+    "has_dark_spot_under_eye": "Есть тёмное пятно под глазом?",
+    "has_longitudinal_ridges": "Есть рёбрышки на спине?",
+    "pattern": "Узор(ы)",
+    "pattern_size": "Размер узора(ов)",
+    "color": "Цвет узора(ов)",
+    "ridge": "Гребень",
+    "fringe": "Бахрома"
+}

@@ -1,52 +1,43 @@
 {
-    "pattern_type": ["mosaic", "solid", "stripes"],
-
-    "color": [
-        "коричневый",
-        "серый",
-        "белый",
-        "светлый",
-        "бурый",
-        "оливковый",
-        "жёлтый",
-        "розовый"
-    ],
-    "s_ridge": [
-        "отсутствует",
-        "слабовыраженный",
-        "зубчатый"
-    ],
-    "s_fringe": [
+    "has_tail": [0, 1],
+    "size_cm": [1, 20],
+    "body_parts": {
+        "m_pattern": ["Мозайка", "Однородный", "Полосы", "Пятна"],
+        "m_pattern_size": ["Маленький", "Средний", "Большой"],
+        "m_color": [
+            "коричневый",
+            "серый",
+            "белый",
+            "светлый",
+            "бурый",
+            "оливковый",
+            "жёлтый",
+            "розовый",
+            "тёмный"
+        ],
+        "ridge": [
+            "отсутствует",
+            "слабовыраженный",
+            "зубчатый"
+        ],
+        "fringe": [
         "отсутствует",
         "кожистая оторочка"
-    ],
-    "size_min": 1,
-    "size_max": 20,
-    "has_gills": [0, 1],
-    "s_teeth_type": [
-        "мелкие",
-        "двурядные"
-    ],
-    "has_claws": [0, 1],
-    "r_front_toe_count": [3, 4, 5],
-    "r_back_toe_count": [3, 4, 5],
-    "s_toe_tips_type": [
-        "округлые",
-        "закруглённые"
-    ],
-    "has_grooves": [0, 1],
-    "has_tympanum": [0, 1],
-    "has_tubercles": [0, 1],
-    "s_webbing_type": [
-        "развитая",
-        "умеренная",
-        "отсутствует"
-    ],
-    "s_forehead_type": [
-        "плоский",
-        "уплощённый"
-    ],
-    "has_temporal_stripe": [0, 1],
-    "has_dark_spot_under_eye": [0, 1],
-    "has_tail": [0, 1]
+        ]
+    },
+    "key_traits": {
+        "has_gills": [0, 1],
+        "teeth_type": ["Мелкие", "Двурядные"],
+        "has_claws": [0, 1],
+        "r_front_toe_count": [3, 5],
+        "r_back_toe_count": [3, 5],
+        "toe_tips_type": ["Округлые", "Закругленные"],
+        "has_grooves": [0, 1],
+        "has_tympanum": [0, 1],
+        "has_tubercles": [0, 1],
+        "tarsal_fold": ["Слабовыраженная", "отсуствует"],
+        "has_dark_inguinal_loop": [0, 1],
+        "has_dark_spot_under_eye": [0, 1],
+        "has_longitudinal_ridges": [0, 1]
+    }
 }

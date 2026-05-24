@@ -81,7 +81,14 @@ class Identifier:
                 'Bad input, not enough key traits. Check input module')
 
         for trait in user_input:
-            if user_input[trait] == species[trait]:
+            input_value = user_input[trait]
+            species_value = user_input[trait]
+            if isinstance(input_value, str):
+                input_value = input_value.lower()
+            if isinstance(species_value, str):
+                species_value = species_value.lower()
+
+            if input_value == species_value:
                 matches += 1
         return (matches / total_traits) * KEY_TRAITS_WEIGHT
 
@@ -132,17 +139,14 @@ class Identifier:
                 tuple(user_input['size_cm']),
                 tuple(species['characteristics']['size_cm'])
             )
-            print(size_score)
             key_traits_score = self._compare_key_traits(
                 user_input['key_traits'],
                 species['characteristics']['key_traits'])
-            print(key_traits_score)
             body_parts_score = self._compare_body_parts(
                 user_input['body_parts'],
                 species['characteristics']['body_parts'],
                 isTailles
             )
-            print(body_parts_score)
             total_score = size_score + key_traits_score + body_parts_score
             if total_score < 50:
                 continue
@@ -154,7 +158,6 @@ class Identifier:
             found_species.sort(key=lambda x: x[1], reverse=True)
             top_3 = found_species[:3]
             winner, percentage = top_3[0]
-            print(top_3[0][1], top_3[1][1])
             return top_3, winner, percentage
 
     def _compare_list_trait(
@@ -165,11 +168,15 @@ class Identifier:
 
         if input_trait is None or species_trait is None:
             return 0.0
+        input_trait = list(map(str.lower, input_trait))
+        species_trait = list(map(str.lower, species_trait))
 
         input_set = set(input_trait)
         species_set = set(species_trait)
         matches = input_set & species_set
         max_possible_matches = max(len(input_set), len(species_set))
+        if max_possible_matches == 0:
+            return 0.0
         match_score = len(matches) / max_possible_matches
         return match_score * weight
 

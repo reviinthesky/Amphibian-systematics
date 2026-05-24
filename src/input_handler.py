@@ -1,98 +1,73 @@
-import json
-from typing import Any, Dict
+# Sorry i was too tired to make it smarter way. Gimme a slack will ya?
 
-from answers import DynamicEnumLoader
-
-DEFAULT_ANSWERS: Dict[str, Any] = {
-    "has_tail": None,
-    "body_parts": [
-        {
-            "part": "Голова",
-            "pattern": None,
-            "pattern_size": None,
-            "color": None,
-            "ridge": None,
-            "fringe": None
-        },
-        {
-            "part": "Спина",
-            "pattern": None,
-            "pattern_size": None,
-            "color": None,
-            "ridge": None,
-            "fringe": None
-        },
-        {
-            "pattern": None,
-            "pattern_size": None,
-            "color": None,
-            "ridge": None,
-            "fringe": None
-        },
-        {
-            "pattern": None,
-            "pattern_size": None,
-            "color": None,
-            "ridge": None,
-            "fringe": None
-        },
-        {
-            "part": "Пальцы",
-            "pattern": [],
-            "pattern_size": [],
-            "color": [],
-            "ridge": None,
-            "fringe": None
-        },
-        {
-            "part": "Хвост",
-            "pattern": [],
-            "pattern_size": [],
-            "color": [],
-            "ridge": None,
-            "fringe": None
+def normalize_input(user_input):
+    final_dict = {
+        'has_tail': user_input['has_tail'],
+        'size_cm': user_input['size_cm'],
+        'body_parts': [
+            {
+                "part": "Голова",
+                "pattern": user_input['Голова']['pattern'],
+                "pattern_size": user_input['Голова']['pattern_size'],
+                "color": user_input['Голова']['color'],
+                        "ridge": user_input['Голова']['ridge'],
+                        "fringe": user_input['Голова']['fringe']
+            },
+            {
+                "part": "Спина",
+                "pattern": user_input['Спина']['pattern'],
+                "pattern_size": user_input['Спина']['pattern_size'],
+                "color": user_input['Спина']['color'],
+                "ridge": user_input['Спина']['ridge'],
+                "fringe": user_input['Спина']['fringe']
+            },
+            {
+                "part": "Брюхо",
+                "pattern": user_input['Брюхо']['pattern'],
+                "pattern_size": user_input['Брюхо']['pattern_size'],
+                "color": user_input['Брюхо']['color'],
+                "ridge": user_input['Брюхо']['ridge'],
+                "fringe": user_input['Брюхо']['fringe']
+            },
+            {
+                "part": "Лапы",
+                "pattern": user_input['Лапы']['pattern'],
+                "pattern_size": user_input['Лапы']['pattern_size'],
+                "color": user_input['Лапы']['color'],
+                "ridge": user_input['Лапы']['ridge'],
+                "fringe": user_input['Лапы']['fringe']
+            },
+            {
+                "part": "Пальцы",
+                "pattern": user_input['Пальцы']['pattern'],
+                "pattern_size": user_input['Пальцы']['pattern_size'],
+                "color": user_input['Пальцы']['color'],
+                "ridge": user_input['Пальцы']['ridge'],
+                "fringe": user_input['Пальцы']['fringe']
+            },
+            {
+                "part": "Хвост",
+                "pattern": user_input['Хвост']['pattern'],
+                "pattern_size": user_input['Хвост']['pattern_size'],
+                "color": user_input['Хвост']['color'],
+                "ridge": user_input['Хвост']['ridge'],
+                "fringe": user_input['Хвост']['fringe']
+            }
+        ],
+        'key_traits': {
+            "has_gills": user_input['has_gills'],
+            "teeth_type": user_input['teeth_type'],
+            "has_claws": user_input['has_claws'],
+            "front_toe_count": user_input['front_toe_count'],
+            "back_toe_count": user_input['back_toe_count'],
+            "toe_tips_type": user_input['toe_tips_type'],
+            "has_grooves": user_input['has_grooves'],
+            "has_tympanum": user_input['has_tympanum'],
+            "has_tubercles": user_input['has_tubercles'],
+            "tarsal_fold": user_input['tarsal_fold'],
+            "has_dark_inguinal_loop": user_input['has_dark_inguinal_loop'],
+            "has_dark_spot_under_eye": user_input['has_dark_spot_under_eye'],
+            "has_longitudinal_ridges": user_input['has_longitudinal_ridges'],
         }
-    ],
-    "size_cm": [],
-    "key_traits": {
-        "has_gills": 0,
-        "teeth_type": None,
-        "has_claws": 0,
-        "front_toe_count": 0,
-        "back_toe_count": 0,
-        "toe_tips_type": None,
-        "has_grooves": 0,
-        "has_tympanum": 0,
-        "has_tubercles": 0,
-        "has_tarsal_fold": None,
-        "has_dark_inguinal_loop": None,
-        "has_dark_spot_under_eye": None,
-        "longitudinal_ridges": None,
     }
-}
-
-
-class InputHandler:
-
-    def __init__(self) -> None:
-        self.enum_loader = DynamicEnumLoader()
-        self.user_input: Dict[str, Any] = DEFAULT_ANSWERS
-        self._load_questions()
-
-    def _load_questions(self):
-        with open('data/answers.json', 'r', encoding='UTF-8') as file:
-            data = json.load(file)
-        self.bool_questions = []
-        self.single_choice_questions = []
-        self.multiple_choices_questions = []
-        for key in data.keys():
-            if key.startswith('has_'):
-                self.bool_questions.append(key)
-            elif key.startswith('s_'):
-                self.single_choice_questions.append(key)
-            elif key.startswith('m_'):
-                self.multiple_choices_questions.append(key)
-
-    def get_questions(self):
-        return self.bool_questions, \
-            self.single_choice_questions, self.multiple_choices_questions
+    return final_dict

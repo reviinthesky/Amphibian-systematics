@@ -12,15 +12,15 @@
             "body_parts": [
                 {
                     "part": "Голова",
-                    "pattern": ["spots"],
-                    "pattern_size": ["мелкие"],
+                    "pattern": ["пятна"],
+                    "pattern_size": ["маленький"],
                     "color": ["коричневый", "оливковый"],
                     "ridge": "отсутствует",
                     "fringe": "отсутствует"
                 },
                 {
                     "part": "Спина",
-                    "pattern": ["spots", "stripes"],
+                    "pattern": ["пятна", "полосы"],
                     "pattern_size": ["средние", "узкие"],
                     "color": ["бурый", "оливковый", "серый"],
                     "ridge": "слабовыраженный",
@@ -28,35 +28,35 @@
                 },
                 {
                     "part": "Брюхо",
-                    "pattern": ["solid"],
-                    "pattern_size": null,
+                    "pattern": ["однородный"],
+                    "pattern_size": [],
                     "color": ["белый", "светлый", "розовый"],
                     "ridge": "отсутствует",
                     "fringe": "отсутствует"
                 },
                 {
                     "part": "Лапы",
-                    "pattern": ["spots"],
-                    "pattern_size": ["мелкие"],
+                    "pattern": ["пятна"],
+                    "pattern_size": ["маленький"],
                     "color": ["серый", "коричневый"],
                     "ridge": "отсутствует",
                     "fringe": "отсутствует"
                 },
                 {
                     "part": "Пальцы",
-                    "pattern": null,
-                    "pattern_size": null,
+                    "pattern": [],
+                    "pattern_size": [],
                     "color": ["светлый", "серый"],
                     "ridge": "отсутствует",
                     "fringe": "отсутствует"
                 },
                 {
                     "part": "Хвост",
-                    "pattern": null,
-                    "pattern_size": null,
-                    "color": null,
-                    "ridge": null,
-                    "fringe": null
+                    "pattern": [],
+                    "pattern_size": [],
+                    "color": [],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
                 }
             ],
             "size_cm": [5, 8],
@@ -67,38 +67,15 @@
                 "has_claws": 0,
                 "front_toe_count": 4,
                 "back_toe_count": 5,
-                "toe_tips_type": "округлые",
+                "toe_tips_type": "Округлые",
                 "has_grooves": 0,
                 "has_tympanum": 1,
                 "has_tubercles": 1,
-                "tarsal_fold": "слабовыраженная",
+                "tarsal_fold": "Слабовыраженная",
                 "has_dark_inguinal_loop": 0,
                 "has_dark_spot_under_eye": 0,
                 "has_longitudinal_ridges": 0
             }
-        },
-        "sexual_dimorphism": {
-            "male": {
-            "has_resonators": null,
-            "resonator_color": null,
-            "heel_tubercle_type": null,
-            "heel_tubercle_ratio": null,
-            "webbing_type": null,
-            "forehead_type": null,
-            "joint_tubercle_type": null,
-            "temporal_stripe": null,
-            "cloaca_eye_distance_ratio": null
-            },
-            "female": {
-            "heel_tubercle_type": null,
-            "heel_tubercle_ratio": null,
-            "webbing_type": null,
-            "forehead_type": null,
-            "joint_tubercle_type": null,
-            "temporal_stripe": null,
-            "cloaca_eye_distance_ratio": null
-            },
-            "unknown": {}
         },
         "unique_features": [
             "розовая или красноватая окраска брюха с тёмными пятнами или мраморным рисунком",
@@ -113,23 +90,23 @@
                 "body_parts": [
                 {
                     "part": "Голова",
-                    "pattern": ["spots"],
-                    "pattern_size": ["мелкие"],
-                    "color": ["тёмные"],
+                    "pattern": ["пятна"],
+                    "pattern_size": ["маленький"],
+                    "color": ["тёмный"],
                     "ridge": "отсутствует",
                     "fringe": "отсутствует"
                 },
                 {
                     "part": "Спина",
-                    "pattern": ["spots"],
-                    "pattern_size": ["средние"],
-                    "color": ["тёмные"],
+                    "pattern": ["пятна"],
+                    "pattern_size": ["средний"],
+                    "color": ["тёмный"],
                     "ridge": "слабовыраженный",
                     "fringe": "отсутствует"
                 },
                 {
                     "part": "Брюхо",
-                    "pattern": ["solid"],
+                    "pattern": ["однородный"],
                     "pattern_size": [],
                     "color": ["светлый", "белый"],
                     "ridge": "отсутствует",
@@ -137,8 +114,8 @@
                 },
                 {
                     "part": "Лапы",
-                    "pattern": ["spots"],
-                    "pattern_size": ["мелкие"],
+                    "pattern": ["пятна"],
+                    "pattern_size": ["маленький"],
                     "color": ["бурый", "коричневый"],
                     "ridge": "отсутствует",
                     "fringe": "отсутствует"
@@ -177,29 +154,6 @@
                     "has_dark_spot_under_eye": 0,
                     "has_longitudinal_ridges": 0
                 }
-            },
-            "sexual_dimorphism": {
-                "male": {
-                "has_resonators": null,
-                "resonator_color": null,
-                "heel_tubercle_type": null,
-                "heel_tubercle_ratio": null,
-                "webbing_type": null,
-                "forehead_type": null,
-                "joint_tubercle_type": null,
-                "temporal_stripe": null,
-                "cloaca_eye_distance_ratio": null
-                },
-                "female": {
-                "heel_tubercle_type": null,
-                "heel_tubercle_ratio": null,
-                "webbing_type": null,
-                "forehead_type": null,
-                "joint_tubercle_type": null,
-                "temporal_stripe": null,
-                "cloaca_eye_distance_ratio": null
-                },
-                "unknown": {}
             },
             "unique_features": [
                 "характерное тёмное пятно в паховой области",

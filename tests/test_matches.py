@@ -1,5 +1,7 @@
-import pytest
+import pytest  # type: ignore
+
 from src.identifier import Identifier
+from src.ui import show_result_window
 MATCH_100PERCENT = {
     "common_name": "Сибирская лягушка",
     "latin_name": "Rana amurensis",
@@ -83,3 +85,10 @@ def test_full_match():
     assert percentage is not None
     assert result['common_name'] == MATCH_100PERCENT['common_name']
     assert percentage == 100.0
+
+
+def test_final_ui():
+    user_input = MATCH_100PERCENT
+    app = Identifier()
+    top_3, result, percentage = app.find_matches(user_input)
+    show_result_window(top_3, result, percentage)
