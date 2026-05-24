@@ -1,5 +1,6 @@
 import json
 from typing import Any, Dict, List
+from .path import get_base_path
 
 KEY_TRAITS_WEIGHT = 30.0
 BODY_PARTS_WEIGHT = 45.0
@@ -22,7 +23,7 @@ class Identifier:
         self._load_data()
 
     def _load_data(self):
-        with open('data/data.json', 'r', encoding='UTF-8') as file:
+        with open(get_base_path('data/data.json'), 'r', encoding='UTF-8') as file:
             data = json.load(file)
             self.tailed = data['Tailed']
             self.tailles = data['Tailles']

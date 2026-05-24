@@ -1,6 +1,7 @@
 import json
 from enum import Enum
 from typing import Union, List
+from .path import get_base_path
 
 
 class QuestionType(Enum):
@@ -43,9 +44,9 @@ class QuestionsLoader:
         self._load_questions()
 
     def _load_questions(self):
-        with open('data/answers.json', 'r', encoding='UTF-8') as file:
+        with open(get_base_path('data/answers.json'), 'r', encoding='UTF-8') as file:
             options_data = json.load(file)
-        with open('data/features_to_questions.json', 'r', encoding='UTF-8') as file:
+        with open(get_base_path('data/features_to_questions.json'), 'r', encoding='UTF-8') as file:
             questions_data = json.load(file)
 
         yes_no_unknown_options = [
