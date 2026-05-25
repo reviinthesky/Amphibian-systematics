@@ -1,10 +1,9 @@
 import tkinter as tk
-from tkinter import ttk, Frame, Canvas
+from tkinter import ttk, Frame, Canvas, font
 from typing import Any, Dict, Literal
 
 from .question import Question, QuestionType, QuestionsLoader
 
-FONT = ('Arial', 12)
 body_parts = ['Голова', 'Спина', 'Брюхо', 'Лапы', 'Пальцы', 'Хвост']
 questionloader = QuestionsLoader()
 important_questions, feature_questions, \
@@ -74,10 +73,33 @@ class UI:
             "has_longitudinal_ridges": None,
         }
 
-        main_frame = Frame(self.root)
+        self.FONT = font.Font(family='Farabee', size=14, name='Farabee')
+        self.FONT.configure(family='fonts/ofont.ru_Farabee.ttf')
+
+        self.combobox_style = ttk.Style()
+        self.combobox_style.theme_use('clam')
+        self.combobox_style.configure(
+            "Custom.TCombobox",
+            borderwidth=3,
+            relief='solid',
+            fieldbackground='#90AB8B',
+            foreground='black',
+            background='#90AB8B'
+        )
+        self.combobox_style.map(
+            "Custom.TCombobox",
+            background=[('focus', '#3B4953')],
+            fieldbackground=[('focus', '#90AB8B')]
+        )
+        self.root.option_add('*TCombobox*Listbox.font', self.FONT)
+        self.root.option_add('*TCombobox*Listbox.background', '#90AB8B')
+        self.root.option_add('*TCombobox*Listbox.foreground', 'black')
+        self.root.option_add("*TCombobox*Listbox.selectBackground", '#3B4953')
+        self.root.configure(bg='#3B4953')
+        main_frame = Frame(self.root, bg='#3B4953')
         main_frame.pack(fill='both', expand=1)
 
-        my_canvas = Canvas(main_frame)
+        my_canvas = Canvas(main_frame, bg='#AFC4B7')
         my_canvas.pack(side='left', fill='both', expand=1)
 
         scrollbar = ttk.Scrollbar(
@@ -88,10 +110,10 @@ class UI:
         my_canvas.bind('<Configure>', lambda e: my_canvas.configure(
             scrollregion=my_canvas.bbox('all')))
 
-        canvas_frame = Frame(my_canvas)
+        canvas_frame = Frame(my_canvas, bg='#AFC4B7')
         my_canvas.create_window((0, 0), window=canvas_frame, anchor="nw")
 
-        important_frame = Frame(canvas_frame)
+        important_frame = Frame(canvas_frame, bg='#AFC4B7')
         important_frame.pack()
 
         for question in important_questions:
@@ -100,7 +122,7 @@ class UI:
             else:
                 self._make_range_question(question, important_frame)
 
-        key_traits_frame = Frame(canvas_frame)
+        key_traits_frame = Frame(canvas_frame, bg='#AFC4B7')
         key_traits_frame.pack()
         for question in key_traits_questions:
             if question.type == QuestionType.RADIO:
@@ -112,29 +134,39 @@ class UI:
             elif question.type == QuestionType.RANGE:
                 self._make_range_question(question, key_traits_frame)
 
-        body_parts_frame = Frame(canvas_frame)
+        body_parts_frame = Frame(canvas_frame, bg='#AFC4B7')
         body_parts_frame.pack(pady=10)
 
-        parts_label = tk.Label(body_parts_frame, text='Части тела')
+        parts_label = self._make_label(body_parts_frame, 'Части тела')
         parts_label.grid(row=0, column=0)
 
-        self.parts_box = ttk.Combobox(body_parts_frame, values=body_parts)
-        self.parts_box.grid(row=1, column=0)
+        self.parts_box = ttk.Combobox(
+            body_parts_frame,
+            values=body_parts,
+            font=self.FONT,
+            style='Custom.TCombobox',
+            background='#90AB8B')
+        self.parts_box.grid(row=1, column=0, padx=20)
         self.parts_box.current(0)
         self.parts_box.bind('<<ComboboxSelected>>', self._on_part_change)
 
-        feature_label = tk.Label(body_parts_frame, text='Характеристики')
+        feature_label = self._make_label(body_parts_frame, 'Характеристики')
         feature_label.grid(row=0, column=1)
         feature_values = [q.text for q in feature_questions]
         self.part_features_box = ttk.Combobox(
-            body_parts_frame, values=feature_values)
-        self.part_features_box.grid(row=1, column=1)
+            body_parts_frame,
+            values=feature_values,
+            font=self.FONT,
+            style='Custom.TCombobox',
+            background='#90AB8B'
+        )
+        self.part_features_box.grid(row=1, column=1, padx=20)
         self.part_features_box.current(0)
         self.part_features_box.bind(
             '<<ComboboxSelected>>', self._on_feature_change)
 
-        self.options_frame = tk.Frame(body_parts_frame)
-        self.options_frame.grid(row=1, column=3)
+        self.options_frame = tk.Frame(body_parts_frame, bg='#AFC4B7')
+        self.options_frame.grid(row=3, column=0, pady=30, columnspan=3)
         self._on_feature_change()
 
     def _on_part_change(self, e):
@@ -164,14 +196,14 @@ class UI:
     ) -> None:
         if question.type != QuestionType.RADIO:
             raise ValueError('Question type is not radio!')
-        question_container = Frame(frame)
+        question_container = Frame(frame, bg='#AFC4B7')
         question_container.pack(fill='x', padx=70, pady=20)
 
-        label = tk.Label(question_container, text=question.text, font=FONT)
+        label = self._make_label(question_container, question.text)
         label.pack(fill='x')
 
-        radio_frame = tk.Frame(question_container,)
-        radio_frame.pack(fill='x', pady=10)
+        radio_frame = tk.Frame(question_container, bg='#AFC4B7')
+        radio_frame.pack(pady=10, padx=70)
 
         var = tk.IntVar(value=0) if value_type == 'int' else tk.StringVar()
 
@@ -185,9 +217,12 @@ class UI:
                     isBodyPart=False,
                     key=question.key,
                     value=var.get()
-                )
+                ),
+                bg='#90AB8B',
+                highlightcolor='#3B4953',
+                highlightbackground='#3B4953'
             )
-            rd_button.grid(row=0, column=i, padx=5)
+            rd_button.grid(row=0, column=i)
 
     def _make_range_question(
             self,
@@ -197,36 +232,54 @@ class UI:
         if question.type != QuestionType.RANGE:
             raise ValueError('Question type is not range!')
 
-        range_container = tk.Frame(frame)
+        range_container = tk.Frame(frame, bg='#AFC4B7')
         range_container.pack(fill='x', pady=20)
 
         if question.key != 'size_cm':
-            label = tk.Label(range_container, text=question.text)
+            label = self._make_label(range_container, question.text)
             label.pack(fill='x', pady=20)
             slider = tk.Scale(
                 range_container,
                 from_=question.range_min,
                 to=question.range_max,
-                orient='horizontal')
+                orient='horizontal',
+                sliderrelief='flat',
+                bg='#5A7863',
+                highlightbackground='#3B4953',
+                troughcolor='#90AB8B',
+                fg='white',
+                highlightthickness=3)
             slider.pack(fill='x')
             slider.bind('<ButtonRelease-1>',
                         lambda e: self._save_answer(question.key,
                                                     slider.get()))
             return
         else:
-            label_min = tk.Label(range_container, text='Минимальный размер(см)')
+            label_min = self._make_label(range_container, 'Минимальный размер(см)')
             slider_min = tk.Scale(
                 range_container,
                 from_=question.range_min,
                 to=question.range_max,
-                orient='horizontal'
+                orient='horizontal',
+                sliderrelief='flat',
+                bg='#5A7863',
+                highlightbackground='#3B4953',
+                troughcolor='#90AB8B',
+                fg='white',
+                highlightthickness=3
+
             )
-            label_max = tk.Label(range_container, text='Максимальный размер(см)')
+            label_max = self._make_label(range_container, 'Максимальный размер(см)')
             slider_max = tk.Scale(
                 range_container,
                 from_=question.range_min,
                 to=question.range_max,
-                orient='horizontal'
+                orient='horizontal',
+                sliderrelief='flat',
+                bg='#5A7863',
+                highlightbackground='#3B4953',
+                troughcolor='#90AB8B',
+                fg='white'
             )
             label_min.pack(fill='x')
             slider_min.pack(fill='x')
@@ -255,11 +308,20 @@ class UI:
         if question.type != QuestionType.MULTI_CHOICES:
             raise ValueError('The question is not multi-choice!')
 
-        label = tk.Label(frame, text=question.text)
+        label = self._make_label(frame, question.text)
         label.pack(padx=40)
 
         box_scrollbar = tk.Scrollbar(frame, orient='vertical')
-        listbox = tk.Listbox(frame, selectmode='multiple', yscrollcommand=box_scrollbar.set)
+        listbox = tk.Listbox(
+            frame,
+            selectmode='multiple',
+            yscrollcommand=box_scrollbar.set,
+            highlightbackground='#3B4953',
+            highlightcolor='#3B4953',
+            highlightthickness=3,
+            bg='#90AB8B',
+            font=self.FONT
+        )
         box_scrollbar.config(command=listbox.yview)
         box_scrollbar.pack(side='right', fill='y')
         listbox.pack(padx=40)
@@ -278,6 +340,17 @@ class UI:
         else:
             self.answers[key] = value
 
+    def _make_label(self, frame: Frame | Canvas, text: str) -> tk.Label:
+        label = tk.Label(
+            frame,
+            text=text,
+            font=self.FONT,
+            bg='#90AB8B',
+            highlightbackground='#3B4953',
+            highlightcolor='#3B4953',
+            highlightthickness=3)
+        return label
+
 
 def run_questionier():
     root = tk.Tk()
@@ -294,7 +367,8 @@ def run_questionier():
         root,
         text="Найти амфибию",
         command=on_submit,
-        font=FONT
+        bg='#90AB8B',
+        font=ui.FONT
     )
     check_button.pack(pady=10)
     root.mainloop()
@@ -329,15 +403,13 @@ def show_result_window(top3, winner, winner_percentage):
     # Заголовок для топ‑3
     ttk.Label(
         canvas_frame,
-        text="Топ‑3 возможных вида и их проценты совпадения:",
-        font=FONT).pack(anchor="w", pady=(10, 5))
+        text="Топ‑3 возможных вида и их проценты совпадения:").pack(anchor="w", pady=(10, 5))
 
     for i, item in enumerate(top3, 1):
         species, percentage = item
         ttk.Label(
             canvas_frame,
-            text=f"{i}. {species['common_name']} процент: {percentage:.2f}",
-            font=FONT
+            text=f"{i}. {species['common_name']} процент: {percentage:.2f}"
         ).pack(anchor="w", pady=2)
 
     ttk.Separator(canvas_frame, orient="horizontal").pack(
