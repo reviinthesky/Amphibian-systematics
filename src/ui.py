@@ -258,7 +258,10 @@ class UI:
         label = tk.Label(frame, text=question.text)
         label.pack(padx=40)
 
-        listbox = tk.Listbox(frame, selectmode='multiple')
+        box_scrollbar = tk.Scrollbar(frame, orient='vertical')
+        listbox = tk.Listbox(frame, selectmode='multiple', yscrollcommand=box_scrollbar.set)
+        box_scrollbar.config(command=listbox.yview)
+        box_scrollbar.pack(side='right', fill='y')
         listbox.pack(padx=40)
 
         for option in question.options:

@@ -70,28 +70,5 @@
             "has_longitudinal_ridges": 0
         }
     },
-    "sexual_dimorphism": {
-        "male": {
-            "has_resonators": null,
-            "resonator_color": null,
-            "heel_tubercle_type": null,
-            "heel_tubercle_ratio": null,
-            "webbing_type": null,
-            "forehead_type": null,
-            "joint_tubercle_type": null,
-            "temporal_stripe": null,
-            "cloaca_eye_distance_ratio": null
-        },
-        "female": {
-            "heel_tubercle_type": null,
-            "heel_tubercle_ratio": null,
-            "webbing_type": null,
-            "forehead_type": null,
-            "joint_tubercle_type": null,
-            "temporal_stripe": null,
-            "cloaca_eye_distance_ratio": null
-        },
-        "unknown": {}
-    },
     "unique_features": [""]
 }

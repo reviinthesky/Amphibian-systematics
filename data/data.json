@@ -1,8 +1,390 @@
 {
     "Tailed": [
-        {},
-        {},
-        {}
+        {
+            "common_name": "Сибирский Углозуб",
+            "latin_name": "Salamandrella keyserlingii",
+            "characteristics": {
+                "body_parts": [
+                {
+                    "part": "Голова",
+                    "pattern": ["Однородный"],
+                    "pattern_size": null,
+                    "color": ["бурый", "коричневый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Спина",
+                    "pattern": ["Пятна", "Мозайка"],
+                    "pattern_size": ["Маленький", "Средний"],
+                    "color": ["бурый", "оливковый", "тёмный"],
+                    "ridge": "слабовыраженный",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Брюхо",
+                    "pattern": ["Однородный"],
+                    "pattern_size": null,
+                    "color": ["светлый", "розовый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Лапы",
+                    "pattern": ["Однородный"],
+                    "pattern_size": null,
+                    "color": ["бурый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Пальцы",
+                    "pattern": ["Однородный"],
+                    "pattern_size": null,
+                    "color": ["бурый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Хвост",
+                    "pattern": ["Однородный"],
+                    "pattern_size": null,
+                    "color": ["бурый", "тёмный"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                }
+                ],
+                "size_cm": [12, 18],
+                "key_traits": {
+                "has_gills": 0,
+                "teeth_type": "Мелкие",
+                "has_claws": 0,
+                "front_toe_count": 4,
+                "back_toe_count": 5,
+                "toe_tips_type": "Закругленные",
+                "has_grooves": 0,
+                "has_tympanum": 0,
+                "has_tubercles": 1,
+                "tarsal_fold": "Слабовыраженная",
+                "has_dark_inguinal_loop": 0,
+                "has_dark_spot_under_eye": 1,
+                "has_longitudinal_ridges": 0
+                }
+            },
+            "unique_features": [
+                "Устойчив к низким температурам (может замерзать и оживать)",
+                "Относится к семейству углозубов (Hynobiidae)",
+                "Имеет относительно короткий хвост"
+            ]
+        },
+        {
+            "common_name": "Обыкновенный тритон",
+            "latin_name": "Lissotriton vulgaris",
+            "characteristics": {
+                "body_parts": [
+                {
+                    "part": "Голова",
+                    "pattern": ["Однородный"],
+                    "pattern_size": null,
+                    "color": ["коричневый", "серый", "тёмный"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Спина",
+                    "pattern": ["Однородный", "Пятна"],
+                    "pattern_size": ["Маленький"],
+                    "color": ["коричневый", "оливковый", "тёмный"],
+                    "ridge": "слабовыраженный",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Брюхо",
+                    "pattern": ["Однородный"],
+                    "pattern_size": null,
+                    "color": ["жёлтый", "светлый", "розовый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Лапы",
+                    "pattern": ["Однородный"],
+                    "pattern_size": null,
+                    "color": ["серый", "коричневый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Пальцы",
+                    "pattern": ["Однородный"],
+                    "pattern_size": null,
+                    "color": ["серый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Хвост",
+                    "pattern": ["Пятна"],
+                    "pattern_size": ["Маленький"],
+                    "color": ["коричневый", "тёмный"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                }
+                ],
+                "size_cm": [8, 11],
+                "key_traits": {
+                "has_gills": 1,
+                "teeth_type": "Мелкие",
+                "has_claws": 0,
+                "front_toe_count": 4,
+                "back_toe_count": 5,
+                "toe_tips_type": "Закругленные",
+                "has_grooves": 0,
+                "has_tympanum": 0,
+                "has_tubercles": 1,
+                "tarsal_fold": "отсутствует",
+                "has_dark_inguinal_loop": 0,
+                "has_dark_spot_under_eye": 1,
+                "has_longitudinal_ridges": 0
+                }
+            },
+            "unique_features": [
+                "В брачный период у самцов развивается фестончатый гребень вдоль спины",
+                "Хорошо приспособлен к водной и наземной жизни",
+                "Зимует на суше (в норах, под корнями деревьев)"
+            ]
+        },
+        {
+            "common_name": "Гребенчатый тритон",
+            "latin_name": "Triturus cristatus",
+            "characteristics": {
+                "body_parts": [
+                {
+                    "part": "Голова",
+                    "pattern": ["Пятна"],
+                    "pattern_size": ["Маленький"],
+                    "color": ["тёмный", "коричневый", "серый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Спина",
+                    "pattern": ["Пятна", "Однородный"],
+                    "pattern_size": ["Маленький", "Средний"],
+                    "color": ["тёмный", "бурый", "оливковый"],
+                    "ridge": "зубчатый",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Брюхо",
+                    "pattern": ["Однородный"],
+                    "pattern_size": null,
+                    "color": ["жёлтый", "светлый", "оранжевый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Лапы",
+                    "pattern": ["Пятна"],
+                    "pattern_size": ["Маленький"],
+                    "color": ["серый", "тёмный"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Пальцы",
+                    "pattern": ["Однородный"],
+                    "pattern_size": null,
+                    "color": ["серый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Хвост",
+                    "pattern": ["Пятна"],
+                    "pattern_size": ["Маленький"],
+                    "color": ["тёмный", "серый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                }
+                ],
+                "size_cm": [14, 18],
+                "key_traits": {
+                "has_gills": 1,
+                "teeth_type": "Мелкие",
+                "has_claws": 0,
+                "front_toe_count": 4,
+                "back_toe_count": 5,
+                "toe_tips_type": "Закругленные",
+                "has_grooves": 0,
+                "has_tympanum": 0,
+                "has_tubercles": 1,
+                "tarsal_fold": "отсутствует",
+                "has_dark_inguinal_loop": 0,
+                "has_dark_spot_under_eye": 1,
+                "has_longitudinal_ridges": 0
+                }
+            },
+            "unique_features": [
+                "У самцов в брачный период развивается высокий зазубренный гребень вдоль спины и хвоста",
+                "Более крупный, чем обыкновенный тритон",
+                "Кожа содержит ядовитые железы для защиты от хищников"
+            ]
+        },
+        {
+            "common_name": "Малоазиатский тритон",
+            "latin_name": "Ommatotriton vittatus",
+            "characteristics": {
+                "body_parts": [
+                {
+                    "part": "Голова",
+                    "pattern": ["Пятна"],
+                    "pattern_size": ["Маленький"],
+                    "color": ["тёмный", "коричневый", "серый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Спина",
+                    "pattern": ["Полосы", "Пятна"],
+                    "pattern_size": ["Средний"],
+                    "color": ["коричневый", "оливковый", "тёмный"],
+                    "ridge": "слабовыраженный",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Брюхо",
+                    "pattern": ["Однородный"],
+                    "pattern_size": null,
+                    "color": ["оранжевый", "жёлтый", "светлый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Лапы",
+                    "pattern": ["Пятна"],
+                    "pattern_size": ["Маленький"],
+                    "color": ["коричневый", "серый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Пальцы",
+                    "pattern": ["Однородный"],
+                    "pattern_size": null,
+                    "color": ["серый"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                },
+                {
+                    "part": "Хвост",
+                    "pattern": ["Полосы"],
+                    "pattern_size": ["Средний"],
+                    "color": ["коричневый", "тёмный"],
+                    "ridge": "отсутствует",
+                    "fringe": "отсутствует"
+                }
+                ],
+                "size_cm": [10, 14],
+                "key_traits": {
+                "has_gills": 1,
+                "teeth_type": "Мелкие",
+                "has_claws": 0,
+                "front_toe_count": 4,
+                "back_toe_count": 5,
+                "toe_tips_type": "Закругленные",
+                "has_grooves": 0,
+                "has_tympanum": 0,
+                "has_tubercles": 1,
+                "tarsal_fold": "отсутствует",
+                "has_dark_inguinal_loop": 0,
+                "has_dark_spot_under_eye": 0,
+                "has_longitudinal_ridges": 0
+                }
+            },
+            "unique_features": [
+                "У самцов в брачный период появляется высокий гребень",
+                "Брюхо ярко окрашено (оранжевое или жёлтое) с чёрными пятнами",
+                "Ареал охватывает прибрежные районы Чёрного моря и горные территории Малой Азии"
+            ]
+        },      
+        {
+        "common_name": "Кавказский тритон",
+        "latin_name": "Lissotriton lantzi",
+        "characteristics": {
+            "body_parts": [
+            {
+                "part": "Голова",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["коричневый", "серый", "тёмный"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Спина",
+                "pattern": ["Однородный", "Пятна"],
+                "pattern_size": ["Маленький"],
+                "color": ["оливковый", "коричневый", "бурый"],
+                "ridge": "слабовыраженный",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Брюхо",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["светлый", "жёлтый", "оранжевый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Лапы",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["серый", "коричневый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Пальцы",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["серый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Хвост",
+                "pattern": ["Пятна"],
+                "pattern_size": ["Маленький"],
+                "color": ["коричневый", "тёмный"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            }
+            ],
+            "size_cm": [8, 12],
+            "key_traits": {
+            "has_gills": 1,
+            "teeth_type": "Мелкие",
+            "has_claws": 0,
+            "front_toe_count": 4,
+            "back_toe_count": 5,
+            "toe_tips_type": "Закругленные",
+            "has_grooves": 0,
+            "has_tympanum": 0,
+            "has_tubercles": 1,
+            "tarsal_fold": "отсутствует",
+            "has_dark_inguinal_loop": 0,
+            "has_dark_spot_under_eye": 0,
+            "has_longitudinal_ridges": 0
+            }
+        },
+        "unique_features": [
+            "Эндемик Кавказа",
+            "Обитает в горных водоёмах и вблизи них",
+            "В брачный период у самцов развивается невысокий гребень вдоль спины"
+        ]
+        }
     ],
     "Tailles" : [
         {
@@ -160,6 +542,319 @@
                 "острая мордочка",
                 "в брачный период у самцов появляется голубоватая окраска тела"
             ]
+        }, 
+        {
+        "common_name": "Травяная лягушка",
+        "latin_name": "Rana temporaria",
+        "characteristics": {
+            "body_parts": [
+            {
+                "part": "Голова",
+                "pattern": ["Пятна"],
+                "pattern_size": ["Маленький"],
+                "color": ["коричневый", "серый", "тёмный"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Спина",
+                "pattern": ["Пятна", "Мозайка"],
+                "pattern_size": ["Маленький", "Средний"],
+                "color": ["коричневый", "бурый", "оливковый"],
+                "ridge": "слабовыраженный",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Брюхо",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["светлый", "белый", "розовый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Лапы",
+                "pattern": ["Пятна"],
+                "pattern_size": ["Маленький"],
+                "color": ["коричневый", "серый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Пальцы",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["серый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Хвост",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["коричневый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            }
+            ],
+            "size_cm": [6, 10],
+            "key_traits": {
+            "has_gills": 0,
+            "teeth_type": "Мелкие",
+            "has_claws": 0,
+            "front_toe_count": 4,
+            "back_toe_count": 5,
+            "toe_tips_type": "Закругленные",
+            "has_grooves": 0,
+            "has_tympanum": 1,
+            "has_tubercles": 1,
+            "tarsal_fold": "Слабовыраженная",
+            "has_dark_inguinal_loop": 0,
+            "has_dark_spot_under_eye": 1,
+            "has_longitudinal_ridges": 0
+            }
+        },
+        "unique_features": [
+            "Активна в основном в сумерках и ночью",
+            "Зимует на дне водоёмов, где не промерзает вода",
+            "Имеет тёмное пятно позади глаз",
+            "Перепонки между пальцами задних лап хорошо развиты для плавания"
+        ]
+        },
+        {
+        "common_name": "Серая жаба",
+        "latin_name": "Bufo bufo",
+        "characteristics": {
+            "body_parts": [
+            {
+                "part": "Голова",
+                "pattern": ["Пятна"],
+                "pattern_size": ["Маленький", "Средний"],
+                "color": ["серый", "коричневый", "бурый"],
+                "ridge": "слабовыраженный",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Спина",
+                "pattern": ["Пятна", "Мозайка"],
+                "pattern_size": ["Средний"],
+                "color": ["серый", "бурый", "тёмный"],
+                "ridge": "зубчатый",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Брюхо",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["светлый", "белый", "жёлтый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Лапы",
+                "pattern": ["Пятна"],
+                "pattern_size": ["Маленький"],
+                "color": ["серый", "коричневый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Пальцы",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["серый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Хвост",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["серый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            }
+            ],
+            "size_cm": [7, 13],
+            "key_traits": {
+            "has_gills": 0,
+            "teeth_type": null,
+            "has_claws": 0,
+            "front_toe_count": 4,
+            "back_toe_count": 5,
+            "toe_tips_type": "Закругленные",
+            "has_grooves": 0,
+            "has_tympanum": 1,
+            "has_tubercles": 1,
+            "tarsal_fold": "Слабовыраженная",
+            "has_dark_inguinal_loop": 0,
+            "has_dark_spot_under_eye": 0,
+            "has_longitudinal_ridges": 1
+            }
+        },
+        "unique_features": [
+            "Кожа покрыта бугорками и содержит ядовитые железы",
+            "Предпочитает сухие места, но для размножения нуждается в водоёмах",
+            "Ведёт преимущественно ночной образ жизни",
+            "У самцов в брачный период на передних лапах появляются брачные мозоли"
+        ]
+        },
+        {
+        "common_name": "Дальневосточная лягушка",
+        "latin_name": "Rana dybowskii",
+        "characteristics": {
+            "body_parts": [
+            {
+                "part": "Голова",
+                "pattern": ["Пятна", "Полосы"],
+                "pattern_size": ["Маленький"],
+                "color": ["коричневый", "серый", "бурый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Спина",
+                "pattern": ["Полосы", "Пятна"],
+                "pattern_size": ["Средний"],
+                "color": ["коричневый", "оливковый", "тёмный"],
+                "ridge": "слабовыраженный",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Брюхо",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["светлый", "белый", "розовый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Лапы",
+                "pattern": ["Полосы"],
+                "pattern_size": ["Маленький", "Средний"],
+                "color": ["коричневый", "серый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Пальцы",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["серый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Хвост",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["коричневый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            }
+            ],
+            "size_cm": [5, 8],
+            "key_traits": {
+            "has_gills": 0,
+            "teeth_type": "Мелкие",
+            "has_claws": 0,
+            "front_toe_count": 4,
+            "back_toe_count": 5,
+            "toe_tips_type": "Закругленные",
+            "has_grooves": 0,
+            "has_tympanum": 1,
+            "has_tubercles": 1,
+            "tarsal_fold": "Слабовыраженная",
+            "has_dark_inguinal_loop": 0,
+            "has_dark_spot_under_eye": 1,
+            "has_longitudinal_ridges": 0
+            }
+        },
+        "unique_features": [
+            "Обитает в лесах, вблизи водоёмов и на влажных лугах Дальнего Востока",
+            "Зимует в водоёмах, где вода не промерзает до дна",
+            "У самцов в брачный период появляются брачные мозоли на передних лапах и тёмное брачное окрашивание ладоней",
+            "Отличается относительно короткими задними лапами по сравнению с другими видами лягушек"
+        ]
+        },
+        {
+        "common_name": "Центральноазиатская лягушка",
+        "latin_name": "Rana asiatica",
+        "characteristics": {
+            "body_parts": [
+            {
+                "part": "Голова",
+                "pattern": ["Пятна"],
+                "pattern_size": ["Маленький"],
+                "color": ["коричневый", "серый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Спина",
+                "pattern": ["Пятна", "Однородный"],
+                "pattern_size": ["Маленький", "Средний"],
+                "color": ["коричневый", "бурый", "оливковый"],
+                "ridge": "слабовыраженный",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Брюхо",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["светлый", "белый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Лапы",
+                "pattern": ["Пятна"],
+                "pattern_size": ["Маленький"],
+                "color": ["коричневый", "серый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Пальцы",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["серый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            },
+            {
+                "part": "Хвост",
+                "pattern": ["Однородный"],
+                "pattern_size": null,
+                "color": ["коричневый"],
+                "ridge": "отсутствует",
+                "fringe": "отсутствует"
+            }
+            ],
+            "size_cm": [5, 8],
+            "key_traits": {
+            "has_gills": 0,
+            "teeth_type": "Мелкие",
+            "has_claws": 0,
+            "front_toe_count": 4,
+            "back_toe_count": 5,
+            "toe_tips_type": "Закругленные",
+            "has_grooves": 0,
+            "has_tympanum": 1,
+            "has_tubercles": 1,
+            "tarsal_fold": "Слабовыраженная",
+            "has_dark_inguinal_loop": 0,
+            "has_dark_spot_under_eye": 0,
+            "has_longitudinal_ridges": 0
+            }
+        },
+        "unique_features": [
+            "Ареал охватывает территории Центральной Азии",
+            "Обитает вблизи водоёмов в степных и полупустынных ландшафтах",
+            "Отличается высокой устойчивостью к относительно засушливым условиям по сравнению с другими видами лягушек",
+            "В период размножения собирается в пресных водоёмах"
+        ]
         }
+
     ]
 }
